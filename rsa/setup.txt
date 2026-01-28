@@ -1,0 +1,23 @@
+https://ap-southeast-2.console.aws.amazon.com/ec2/home?region=ap-southeast-2#Instances:
+
+公网IP
+15.134.88.137
+
+用户名
+ubuntu
+
+
+实例 ID
+将实例 ID 复制到剪贴板
+i-07e26e88658af914a (etbood Home Server)
+1. 打开 SSH 客户端。
+2. 查找您的私有密钥文件。用于启动此实例的密钥为 etboodhomerootrsa.pem
+3. 如有需要，运行此命令，以确保您的密钥不公开可见。
+将命令复制到剪贴板
+chmod 400 "etboodhomerootrsa.pem"
+4. 通过其 公有 DNS 连接到您的实例:
+将实例地址复制到剪贴板
+ec2-15-134-88-137.ap-southeast-2.compute.amazonaws.com
+示例:
+将示例命令复制到剪贴板
+ssh -i "etboodhomerootrsa.pem" ubuntu@ec2-15-134-88-137.ap-southeast-2.compute.amazonaws.com
